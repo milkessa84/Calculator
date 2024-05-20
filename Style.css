@@ -1,0 +1,87 @@
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 924px;
+            width: 546;
+            background-color: #f4f4f4;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .calculator {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .display {
+            font-size: 2em;
+            padding: 10px;
+            background: #222;
+            color: #fff;
+            text-align: right;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+            word-wrap: break-word;
+        }
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .btn {
+            font-size: 1.5em;
+            padding: 20px;
+            background: #777;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #d0d0d0;
+        }
+        .btn.number {
+            background: #777777;
+            color: #fff;
+        }
+        .btn.number:hover {
+            background: #f57f17;
+        }
+        .btn.operator {
+            background: #f9a825;
+            color: #fff;
+        }
+        .btn.operator:hover {
+            background: #1976d2;
+        }
+        .btn.equals {
+            background: #4caf50;
+            color: #fff;
+        .btn.point{
+            background-color: #777777;
+        }
+        }
+        .btn.equals:hover {
+            background: #388e3c;
+        }
+        .clear{
+    
+	display: flex;
+	justify-content: end;
+	/* margin: 7px; */
+	margin-bottom: 7px;
+}
+        
+        .btn.clear {
+            background: #e53935;
+            color: #fff;
+            grid-column: span;
+            
+        }
+        .btn.clear:hover {
+            background: #d32f2f;
+            text-align: left;
+        }
